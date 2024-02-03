@@ -1,4 +1,3 @@
-function read(){
 alert("sus");
 const Pulsar = require('pulsar-client');
 
@@ -37,8 +36,6 @@ const Pulsar = require('pulsar-client');
   for (let i = 0; i < 1000; i += 1) {
     console.log((await reader.readNext()).getData().toString());
   }
-
   await reader.close();
   await client.close();
 })();
-}
